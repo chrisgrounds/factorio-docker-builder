@@ -1,0 +1,25 @@
+version: '3.3'
+services:
+  factorio:
+    container_name: factorio
+    image: factoriotools/factorio
+    restart: unless-stopped
+    platform: linux/amd64
+    ports:
+      - "34197:34197/udp"
+      - "27015:27015/tcp"
+      # 51820?
+    volumes:
+      - /opt/factorio:/factorio
+      - ./config/server-settings.json:/server-settings.json
+      - ./mods/mod-list.json:/mod-list.json
+    environment:
+      - UPDATE_MODS_ON_START=true
+      - USERNAME={{FACTORIO_USERNAME}}
+      - TOKEN={{FACTORIO_TOKEN}}
+      # Out-of-the box, factorio does not support environment variables inside the configuration files. A workaround is the usage of envsubst which generates the configuration files dynamically during startup from environment variables set in docker-compose:
+      # https://github.com/factoriotools/factorio-docker
+    entrypoint: >
+      /bin/sh -c "mkdir -p /factorio/config && envsubst < ./server-settings.json > /factorio/config/server-settings.json
+      && mkdir -p /factorio/mods && cp ./mod-list.json /factorio/mods/mod-list.json 
+      && exec /docker-entrypoint.sh"
