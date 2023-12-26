@@ -11,7 +11,7 @@ Ensure you have set the following environment variables:
 - FACTORIO_USERNAME
 - FACTORIO_TOKEN
 
-These values will come from your [Factorio](https://www.factorio.com) account.
+These values will come from your [Factorio](https://www.factorio.com/profile) account.
 
 ## Run
 
