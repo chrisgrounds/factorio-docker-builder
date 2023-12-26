@@ -12,5 +12,5 @@ fi
 
 sed "s/{{FACTORIO_USERNAME}}/$FACTORIO_USERNAME/g; s/{{FACTORIO_TOKEN}}/$FACTORIO_TOKEN/g" ./factorio-template.yaml > ./factorio.yaml
 
-docker compose -f factorio.yaml up
+docker compose -f factorio.yaml up -d
 docker inspect --format="{{.Id}}" factorio
