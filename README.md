@@ -15,7 +15,7 @@ These values will come from your [Factorio](https://www.factorio.com/profile) ac
 
 ## Run
 
-Simply run the `./run.sh` script and docker compose will create a docker container running a factorio server, preconfigured with your credentials and any mods installed. The environment variables set above will be injected into `server-settings.json`.
+Simply run the `./run.sh` script and docker compose will create a docker container running a factorio server, preconfigured with your credentials and any mods installed that you specify (see [Mods](#Mods)). The environment variables set above will be injected into `server-settings.json` and the mods list will be injected into the mods folder in the docker container.
 
 ## Mods
 
