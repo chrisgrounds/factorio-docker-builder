@@ -2,7 +2,7 @@ version: '3.3'
 services:
   factorio:
     container_name: factorio
-    image: factoriotools/factorio
+    image: factoriotools/factorio:stable
     restart: unless-stopped
     platform: linux/amd64
     ports:
