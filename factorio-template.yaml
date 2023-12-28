@@ -6,7 +6,7 @@ services:
     restart: unless-stopped
     platform: linux/amd64
     ports:
-      - "34197:34197/udp"
+      - "34197:34197/udp" # game-server port
       - "27015:27015/tcp"
       # 51820?
     volumes:
