@@ -1,12 +1,80 @@
 {
-  "mods": 
+  "mods":
   [
     {
       "name": "base",
       "enabled": true
     },
     {
+      "name": "flib",
+      "enabled": true
+    },
+    {
+      "name": "liborio",
+      "enabled": true
+    },
+    {
+      "name": "Krastorio2Assets",
+      "enabled": true
+    },
+    {
       "name": "Krastorio2",
+      "enabled": true
+    },
+    {
+      "name": "TinyStart",
+      "enabled": true
+    },
+    {
+      "name": "jetpack",
+      "enabled": true
+    },
+    {
+      "name": "BottleneckLite",
+      "enabled": true
+    },
+    {
+      "name": "bullet-trails",
+      "enabled": true
+    },
+    {
+      "name": "alien-biomes",
+      "enabled": true
+    },
+    {
+      "name": "even-distribution",
+      "enabled": true
+    },
+    {
+      "name": "heroturrets",
+      "enabled": true
+    },
+    {
+      "name": "Cold_biters",
+      "enabled": true
+    },
+    {
+      "name": "Explosive_biters",
+      "enabled": true
+    },
+    {
+      "name": "Toxic_biters",
+      "enabled": true
+    },
+    {
+      "name": "scattergun_turret",
+      "enabled": true
+    },
+    {
+      "name": "RateCalculator",
+      "enabled": true
+    },
+    {
+      "name": "EvoGUI",
+      "enabled": true
+    },
+    {
+      "name": "VehicleSnap",
       "enabled": true
     }
   ]
